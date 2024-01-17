@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andres Ordonez</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+  <nav class="main-navbar" id="main-navbar">
+    <div class="main-navbar--title"><a href="#">&lta&gtndrés</a></div>
+    <div class="main-navbar--menu">
+      <ul>
+        <li><a href="projects.html" class="font-weight-normal">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <header>
+      <div class="header-container">
+        <div class="header-container--photo">
+          <img src="profile_photo2.png">
+        </div>
+        <div class="header-container--title">
+          <h1><span style="font-size:25px">Hello,</span><br />
+            <span style="font-size:55px; font-weight:bold">I'm Andres Ordonez</span><br />
+            <span style="font-size:35px; color:#689af8">Software Developer</span><br />
+          </h1>
+        </div>
+      </div>
+    </header>
+    <section class="projects-section">
+      <div class="projects-section--featured">
+        <div id="title">
+          <h2>Featured Projects</h2>
+        </div>
+        <div class="projects-section--featured-projects">
+          <div class="projects-section__project">
+            <h3>Featured Project 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+          <div class="projects-section__project">
+            <h3>Featured Project 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+          <div class="projects-section__project">
+            <h3>Featured Project 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna
+              aliqua.</p>
+          </div>
+        </div>
+        <div class="projects-section--button">
+          <a href="projects.html">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about-section">
+      <div class="about-section--title">
+        <h2>About Me</h2>
+      </div>
+      <div class="about-section--content">
+        <p>
+          Hi, I'm Andres, currently based in New York City. I am a creative professional
+          who will bring to life your digital projects and ideas. I have over 4 years of experience in the Tech
+          industry, working across operational and analytical roles. I'm passionate about Software development and
+          creating digital
+          products that bring value to people's lives.
+          </br></br>
+          In my spare time, I enjoy photography (IG: @techytravel), playing piano, and reading.
+        </p>
+      </div>
+    </section>
+
+    <section class="footer-section">
+      <p> Designed and Developed by Andres Ordonez
+        <i class="fa-brands fa-linkedin"></i>
+      </p>
+    </section>
+  </main>
+
+  <script>
+    var navBar = document.getElementById("main-navbar");
+
+    window.onscroll = function () {
+      "use strict";
+      if (document.body.scrollTop >= 20 || document.documentElement.scrollTop >= 20) {
+        navBar.classList.add("scroll");
+      } else {
+        navBar.classList.remove("scroll");
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
